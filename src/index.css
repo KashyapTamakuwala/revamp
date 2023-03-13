@@ -92,7 +92,10 @@ hr.RampBreak--l {
 
 .RampInputSelect--dropdown-container {
   display: none;
-  position: fixed;
+  /* Static or removing position property also works 
+  but I thought it would look better if the dropdown didn't
+  push the rest of the page down */
+  position: absolute;
   width: 100%;
   max-width: 700px;
   border: 1px solid var(--color-darker-shade);
